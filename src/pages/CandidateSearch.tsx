@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { searchGithub } from '../api/API';
 import CandidateNominee from '../components/CandidateNominee';
 import type { Candidate } from '../interfaces/Candidate';
-//import { searchGithub /*, searchGithubUser */} from '../api/API';
 
 const CandidateSearch = () => {
   const [displayedCandidate, setCandidate] = useState<Candidate>({
@@ -46,7 +45,7 @@ const CandidateSearch = () => {
 
   return (
     <>
-    <h1>Candidate Search</h1>
+    <h1 className="mt-2 py-1">Candidate Search</h1>
     <CandidateNominee currentCandidate={displayedCandidate} selectCandidate={selectCandidate} />
     </>
   );

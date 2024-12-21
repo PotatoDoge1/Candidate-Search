@@ -1,12 +1,12 @@
 import type { Candidate } from "../interfaces/Candidate.tsx";
 // import { searchGithub } from "../api/API.tsx";
 
-type CandidateNomineeProps = {
+type savedCandidateProps = {
     currentCandidate: Candidate;
-    selectCandidate: (isSelected: boolean) => void;
+    removeCandidate: (id: number) => void;
 };
 
-const CandidateNominee = ({ currentCandidate, selectCandidate }: CandidateNomineeProps) => {
+const savedCandidate = ({ currentCandidate, removeCandidate }: savedCandidateProps) => {
     return (
         <>
             <section className="d-flex justify-content-center align-items-center my-3">
@@ -30,20 +30,13 @@ const CandidateNominee = ({ currentCandidate, selectCandidate }: CandidateNomine
                 )}
             </section>
 
-            <section className="d-flex justify-content-between mt-3">
+            <section className="d-flex justify-content-center mt-3 mb-5">
                 <button
-                    className="btn btn-danger me-2"
-                    onClick={() => selectCandidate(false)}
+                    className="btn btn-danger"
+                    onClick={() => removeCandidate(currentCandidate.id || 0)}
                     style={{ fontSize: '20px' }}
                 >
                     &#10006;
-                </button>
-                <button
-                    className="btn btn-success me-2"
-                    onClick={() => selectCandidate(true)}
-                    style={{ fontSize: '20px', marginLeft: '10px' }}
-                >
-                    &#10004;
                 </button>
             </section>
         </>
@@ -51,5 +44,5 @@ const CandidateNominee = ({ currentCandidate, selectCandidate }: CandidateNomine
 };
 
 
-export default CandidateNominee;
+export default savedCandidate;
   
