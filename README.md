@@ -1,33 +1,49 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Candidate-Search
+![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-Currently, two official plugins are available:
+## Table of Contents
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+- [Description](#description)
+- [Installation Instructions](#installation-instructions)
+- [Usage Information](#usage-information)
+- [Contribution Guidelines](#contribution-guidelines)
+- [Test Instructions](#test-instructions)
+- [Questions](#questions)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Description
+An application that presents a random GitHub user. The user can then be saved to a list of candidates or passed.   
+  
+[Back to ToC](#table-of-contents)
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Installation Instructions
+To run locally you will need to run npm install and add a .env file with a VITE_GITHUB_TOKEN  
+  
+[Back to ToC](#table-of-contents)
 
-* Configure the top-level `parserOptions` property as follows:
+## Usage Information
+N/A  
+  
+[Back to ToC](#table-of-contents)
+  
+## Contribution Guidelines
+N/A  
+  
+[Back to ToC](#table-of-contents)
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Test Instructions
+N/A
+  
+[Back to ToC](#table-of-contents)
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+## Questions
+- I am PotatoDoge1 on Github: [PotatoDoge1](https://github.com/PotatoDoge1)  
+- You can email me at: soverydoge@gmail.com  
+  
+[Back to ToC](#table-of-contents)
 
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+## License
+Link to project license: https://opensource.org/license/mit  
+   
+[Back to ToC](#table-of-contents)
